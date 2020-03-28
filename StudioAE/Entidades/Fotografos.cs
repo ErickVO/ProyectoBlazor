@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Text;
 
 namespace StudioAE.Entidades
@@ -19,6 +20,9 @@ namespace StudioAE.Entidades
         public String Sexo { get; set; }
         public DateTime FechaNacimiento { get; set; }
         public decimal Sueldo { get; set; }
+
+        [ForeignKey("FotografoId")]
+        public List<VentasDetalle> VentasDetalles { get; set; }
 
         public Fotografos()
         {

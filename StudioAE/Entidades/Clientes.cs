@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Text;
 
 namespace StudioAE.Entidades
@@ -19,6 +20,9 @@ namespace StudioAE.Entidades
         public String Sexo { get; set; }
         public DateTime FechaNacimiento { get; set; }
 
+        [ForeignKey("ClienteId")]
+        public List<VentasDetalle> VentasDetalles { get; set; }
+
         public Clientes()
         {
             ClienteId = 0;
@@ -31,6 +35,7 @@ namespace StudioAE.Entidades
             Celular = string.Empty;
             Sexo = string.Empty;
             FechaNacimiento = DateTime.Now;
+            VentasDetalles = new List<VentasDetalle>();
         }
     }
 }
