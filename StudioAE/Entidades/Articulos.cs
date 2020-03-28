@@ -18,7 +18,7 @@ public class Articulos
     public List<ComprasDetalle> ComprasDetalle { get; set; }
 
     [ForeignKey("ArticulosId")]
-    public List<VentasDetalle> VentasDetalle { get; set; }
+    public List<VentasDetalle> VentasDetalle { get; set; }    
 
     public Articulos()
 	{

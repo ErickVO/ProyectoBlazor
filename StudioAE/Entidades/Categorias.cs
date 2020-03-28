@@ -9,7 +9,7 @@ public class Categorias
     public string NombreCategorias { get; set; }
 
     public Categorias()
-	{
+	{    
         CategoriasId = 0;
         UsuarioId = 0;
         NombreCategorias = string.Empty;

@@ -9,7 +9,7 @@ public class ComprasDetalle
     public int CantidadArticulos { get; set; }
     public DateTime Fecha { get; set; }
 
-    public ComprasDetalle()
+    public ComprasDetalle()   
 	{
         ComprasDetalleId = 0;
         ArticulosId = 0;
