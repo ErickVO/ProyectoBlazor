@@ -18,8 +18,14 @@ public class Articulos
 
     public Articulos()
 	{
+        ArticulosId = 0;
+        UsuariosId = 0;
+        NombreArticulos = string.Empty;
+        Categorias = string.Empty;
+        Stock = 0;
+        Precio = 0;
 
-
-
+        ComprasDetalle = new List<ComprasDetalle>();
+        VentasDetalle = new List<VentasDetalle>();
 	}
 }
