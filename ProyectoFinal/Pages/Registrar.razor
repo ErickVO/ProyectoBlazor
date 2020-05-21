@@ -1,0 +1,38 @@
+﻿@page "/Registrar"
+
+@inject NavigationManager NavigationManager
+
+<h1>Registrar</h1>
+
+<p>Seleccione una de las opciones a registrar:</p>
+
+<button class="btn btn-primary" @onclick ="UsuarioP"> Usuario</button>
+<p/>
+<button class="btn btn-primary" @onclick ="ClienteP">Cliente</button>
+<p/>
+<button class="btn btn-primary" @onclick ="ArticuloP">Articulo</button>
+<p/>
+<button class="btn btn-primary" @onclick ="CompraP">Compra</button>
+
+@code {
+
+    void UsuarioP()
+    {
+        NavigationManager.NavigateTo("/Registrar/Usuario");
+    }
+
+    void ClienteP()
+    {
+        NavigationManager.NavigateTo("/Registrar/Cliente");
+    }
+
+    void ArticuloP()
+    {
+        NavigationManager.NavigateTo("/Registrar/Articulo");
+    }
+
+    void CompraP()
+    {
+        NavigationManager.NavigateTo("/Registrar/Compra");
+    }
+}
